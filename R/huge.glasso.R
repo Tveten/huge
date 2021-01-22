@@ -28,8 +28,7 @@ huge.glasso = function(x, lambda = NULL, lambda.min.ratio = NULL, nlambda = NULL
   }
   else
   {
-    x = scale(x)
-    S = cor(x)
+    S = var(x)
   }
   rm(x)
   gc()
